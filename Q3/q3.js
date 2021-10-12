@@ -1,10 +1,14 @@
-var text = document.getElementById("#q3-input");
-var btn1 = document.querySelector("#h1");
-var btn2 = document.querySelector("#h2");
-var btn3 = document.querySelector("#h3");
+var text = document.getElementsByTagName("#q3-input");
+var btn1 = document.querySelector("#btn1");
+var btn2 = document.querySelector("#btn2");
+var btn3 = document.querySelector("#btn3");
 
-var textThree = text.value;
-btn1.addEventListener("click", () => {
-    console.log('click')
-    textThree.style.textDecoration = h1;
-})
+var textType = 0;
+btn1.addEventListener("click", changeTag);
+
+function changeTag() {
+    console.log('click');
+    // textType = 1;
+    text.style.getElementsByTagName = 'h1';
+    // <h1>{text.style}</h1>;
+}
