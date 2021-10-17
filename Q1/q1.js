@@ -17,6 +17,7 @@ const showMessage = document.querySelector("#output");
 addition.addEventListener("click", () => {
     var A = inputA.value;
     var B = inputB.value;
+    console.log("Addition");
 
     const additionOfAB = Number(A)+Number(B);    
     showMessage.innerText = 'sum of two numbers is: '+additionOfAB;
