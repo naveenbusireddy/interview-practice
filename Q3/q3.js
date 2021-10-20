@@ -12,7 +12,7 @@ btn1.addEventListener("click", () => {
     var h1 = document.createElement("h1");
     output.parentNode.append(h1, output);
     h1.innerHTML = input.innerHTML;
-    
+    // output.replaceWith(h1);
 });
 
 btn2.addEventListener("click", () => {
