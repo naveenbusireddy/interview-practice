@@ -1,48 +1,41 @@
-const inputA = document.querySelector("#inputA");
-const inputB = document.querySelector("#inputB");
-const addition = document.querySelector("#addition");
+const inputA = document.querySelector("#inputOne");
+const inputB = document.querySelector("#inputTwo");
+const add = document.querySelector("#addition");
 const sub = document.querySelector("#substraction");
 const mul = document.querySelector("#multiplication");
 const div = document.querySelector("#division");
 const showMessage = document.querySelector("#output");
 
-// function additionAB (){
-//     var A = inputA.value;
-//     var B = inputB.value;
-    
-//     const additionOfAB = Number(A)+Number(B);    
-//     showMessage.innerText = 'sum of two numbers is: '+additionOfAB;   
-// }
 
 addition.addEventListener("click", () => {
-    var A = inputA.value;
-    var B = inputB.value;
-    console.log("Addition");
-
-    const additionOfAB = Number(A)+Number(B);    
-    showMessage.innerText = 'sum of two numbers is: '+additionOfAB;
+    var A = Number(inputA.value);
+    var B = Number(inputB.value);
+    
+    let sum = A+B;   
+    showMessage.innerText = 'sum of two numbers is: '+sum;
 });
 
 sub.addEventListener("click", () => {
-    var A = inputA.value;
-    var B = inputB.value;
-
-    const substractionOfAB = Number(A)-Number(B);    
-    showMessage.innerText = 'substraction of two numbers is: '+substractionOfAB;
+    var A = Number(inputA.value);
+    var B = Number(inputB.value);
+    
+    let substraction = A-B;  
+    showMessage.innerText = 'substraction of two numbers is: '+substraction;
 });
 
 mul.addEventListener("click", () => {
-    var A = inputA.value;
-    var B = inputB.value;
+    var A = Number(inputA.value);
+    var B = Number(inputB.value);
 
-    const multiplicationOfAB = Number(A)*Number(B);    
+    const multiplicationOfAB = A*B;    
     showMessage.innerText = 'Multiplication of two numbers is: '+multiplicationOfAB;
 });
 
 div.addEventListener("click", () => {
-    var A = inputA.value;
-    var B = inputB.value;
+    var A = Number(inputA.value);
+    var B = Number(inputB.value);
 
-    const divisionOfAB = Number(A)/Number(B);    
+    const divisionOfAB = A/B;    
     showMessage.innerText = 'Division of two numbers is: '+divisionOfAB;
 });
+
