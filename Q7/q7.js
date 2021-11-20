@@ -7,7 +7,7 @@ const URL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
 function fetchURL() {
     // console.log("hello");  
     var text = input.value;
-    var newURL = URL+ "?text=" +text;
+    var newURL = URL+"?text="+text;
      
     fetch(newURL)
     .then(Response => Response.json())
@@ -15,7 +15,9 @@ function fetchURL() {
 
     .then(data => {
         var translatedText = data.contents.translated;
-        output.innerHTML = translatedText;
+        var upperText = (data.contents.text).toUpperCase();
+        // output.innerHTML = translatedText +" "+text.toUpperCase();
+        output.innerHTML = translatedText+" "+upperText; 
     } )
 
     // console.log("hello");
